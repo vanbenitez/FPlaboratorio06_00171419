@@ -1,0 +1,16 @@
+from random import*
+n=randrange(1,10)
+x=0
+cont=0 
+
+while(x!=n):
+    x=int(input("Ingresa el numero entero del 1 al 10: "))
+    
+    if(x<n):
+        print("El numero ingresado es menor al numero secreto")
+        
+    else:
+        print("El numero ingresado es mayor al numero secreto")
+    cont=cont+1
+    
+print("El numero de intentos fue "+ str(cont))

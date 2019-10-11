@@ -1,0 +1,33 @@
+print("CAJERO MILANESOS")
+x=0
+r=0
+d=0
+saldo=1000
+while x!=4:
+    print("Seleccione una opcion")
+    print("1-Saldo")
+    print("2-Retiro")
+    print("3-Deposito")
+    print("4-Salir")
+    
+    x=int(input())
+    
+    if x==1:
+        print("Saldo: $"+ str(saldo))
+        
+    elif x==2:
+        print("Ingrese la cantitad que desea retirar: ")
+        r=int(input())
+        saldo=saldo-r
+        print("Su saldo actual es "+str(saldo))
+        
+        if r>saldo:
+            print("La cantidad que desea retirar es mayor al saldo de su cuenta.")
+    
+    elif x==3:
+        print("Ingrese la cantitad que desea depositar: ")
+        d=int(input())
+        saldo=saldo+d
+        print("Su saldo actual es "+str(saldo))
+
+print("Bai")
